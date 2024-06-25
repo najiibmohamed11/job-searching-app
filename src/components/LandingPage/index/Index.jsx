@@ -11,8 +11,8 @@ function Index() {
     <div>
 
       <Header/>
-      {/* <Hero/>
-      <Experience/>
+      <Hero/>
+      {/* <Experience/>
       <YourDreamJob/>
       <FifeJobs/>
       <SeeMore/> */}

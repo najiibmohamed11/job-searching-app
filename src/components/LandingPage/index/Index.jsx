@@ -14,8 +14,8 @@ function Index() {
       <Hero/>
       <Experience/>
       <YourDreamJob/>
-      {/* <FifeJobs/> */}
-      {/* <SeeMore/> */}
+      <FifeJobs/>
+      <SeeMore/>
     </div>
   )
 }

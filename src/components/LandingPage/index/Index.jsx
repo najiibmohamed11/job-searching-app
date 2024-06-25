@@ -12,10 +12,10 @@ function Index() {
 
       <Header/>
       <Hero/>
-      {/* <Experience/>
-      <YourDreamJob/>
-      <FifeJobs/>
-      <SeeMore/> */}
+      <Experience/>
+      {/* <YourDreamJob/> */}
+      {/* <FifeJobs/> */}
+      {/* <SeeMore/> */}
     </div>
   )
 }

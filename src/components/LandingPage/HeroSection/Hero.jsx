@@ -9,16 +9,14 @@ import slack from '../../../assets/companies/slack.png'
 import google from '../../../assets/companies/google.png'  
 import figma from '../../../assets/companies/figma.png'  
 import {Title,TitleSpan,HeroSection,Here,SearchStyle,SearInput,Button,CompoyImages}from "./style"
+import Search from '../Search/Search'
 
 function Hero() {
   return (
     <HeroSection>
         <div>
             <Title>Your Dream Career Starts<Here><span>Here</span>  <TitleSpan>loream consectetur adipisicing elit. r adipisicing eli r adipisicing eli r eli r adipisicing eli Quis necessitatibusora eum.</TitleSpan></Here></Title>
-          <SearchStyle>
-          <SearInput type="text" placeholder='Search for job titile' />
-          <Button>Get Start</Button>
-          </SearchStyle>
+            <Search/>
           <h4 style={{marginBottom:"0px"}}>several companies are opening vacancies</h4>
           <CompoyImages>
             <img src={Notion} alt="" width={30} />

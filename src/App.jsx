@@ -11,15 +11,19 @@ import SeeMore from './components/SeeMore/SeeMore'
 import ModalComponent from './components/Modal/Modal'
 import { Route,Routes } from 'react-router-dom'
 import Index from './components/LandingPage/index/Index'
+import FindJob from "./components/LandingPage/FindJobPage/FindJobPage"
 import Details from './components/details/Details'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
     <Routes>
+      
       <Route path="/" element={ <Index/>} />
       <Route path="/details/:id" element={ <Details/>} />
+      <Route path='/findjop' element={<FindJob/>}/>
 
     </Routes>
    

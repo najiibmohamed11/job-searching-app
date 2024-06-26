@@ -11,10 +11,10 @@ function Header() {
   return (
     <Headers>
   
-            <Link><img src={MainLogo} alt="" width={80} /></Link>
+            <Link to='/'><img src={MainLogo} alt="" width={80} /></Link>
             <Navigations>
-                <SingleLink>Home</SingleLink>
-                <SingleLink>Find Job</SingleLink>
+                <SingleLink to="/">Home</SingleLink>
+                <SingleLink to="/findjop">Find Job</SingleLink>
                 <SingleLink>Why Man</SingleLink>
                 <SingleLink>Contact</SingleLink>
             </Navigations>

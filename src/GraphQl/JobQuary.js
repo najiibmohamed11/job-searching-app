@@ -66,3 +66,21 @@ query MyQuery {
 
 
 `
+export const GET_DETAILED_INFO = gql`
+query MyQuery ($id: Int!) {
+  job_info(where: {id: {_eq: $id}}) {
+    company
+    date
+    detail
+    id
+    imgeurl
+    location
+    requirments
+    salary
+    title
+    detailedRequirements
+    Description
+  }
+}
+
+`

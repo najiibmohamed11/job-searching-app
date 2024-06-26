@@ -7,7 +7,7 @@ import {JobsContainer,} from './style'
 import Loading from '../../Loading/Loading';
 
 
-function FifeJobs() {
+function AllJobs() {
   const requestedJob = useSelector((store) => store.filter); // Correct the state slice
   const requestedJobFunction = requestedJob === "Recommended" ? FIVE_RECOMMENDE_JOBS :
                                requestedJob === "NewJobs" ? FIVE_LATEST_JOBS :
@@ -36,4 +36,4 @@ function FifeJobs() {
   );
 }
 
-export default FifeJobs;
+export default AllJobs;

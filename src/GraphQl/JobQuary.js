@@ -84,3 +84,18 @@ query MyQuery ($id: Int!) {
 }
 
 `
+export const SearchJob = gql`
+query MyQuery ($title: String!) {
+  job_info(where: {title: {_ilike: $title}}) {
+    company
+    date
+    detail
+    id
+    imgeurl
+    location
+    requirments
+    salary
+    title
+  }
+}
+`

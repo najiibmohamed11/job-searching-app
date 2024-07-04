@@ -1,9 +1,11 @@
 import React from 'react'
 import {SeaMorebtn,HollyBtn} from "./style"
+import { useNavigate } from 'react-router-dom'
 function SeeMore() {
+  const navigate = useNavigate()
   return (
     <HollyBtn>
-    <SeaMorebtn>See More</SeaMorebtn>
+    <SeaMorebtn onClick={()=>{navigate('/findjop')}}>See More</SeaMorebtn>
     </HollyBtn>
 
   )

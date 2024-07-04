@@ -13,13 +13,16 @@ import { Route,Routes } from 'react-router-dom'
 import Index from './components/LandingPage/index/Index'
 import FindJob from "./components/LandingPage/FindJobPage/FindJobPage"
 import Details from './components/details/Details'
+import ScrollToTop from './components/scroll/ScrollToTop '
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <ScrollToTop/>
 
     <Routes>
+
       
       <Route path="/" element={ <Index/>} />
       <Route path="/details/:id" element={ <Details/>} />

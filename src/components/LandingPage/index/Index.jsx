@@ -9,7 +9,6 @@ import SeeMore from '../../SeeMore/SeeMore'
 function Index() {
   return (
     <div>
-      <Header/>
       <Hero/>
       <Experience/>
       <YourDreamJob/>

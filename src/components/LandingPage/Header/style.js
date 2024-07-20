@@ -23,16 +23,17 @@ export const SingleLink = styled(Link)`
     text-decoration: none;
     font-weight: 600;
     color: black;
-    
+    `
  
-`
-export const JoinToUs = styled(Link)`
+export const contactBtn = styled(Link)`
     padding: 10px;
     font-size: 15px;
     text-decoration: none;
     background-color:#A855F7 ;
     border-radius: 20px;
     color: white;
+
     
  
 `
+

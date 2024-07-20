@@ -35,6 +35,7 @@ function App() {
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
       
+
       {location.pathname !== '/details/:id' && <Footer />}
     </>
   );

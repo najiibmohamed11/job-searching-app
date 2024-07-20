@@ -18,7 +18,6 @@ const HollyJobSearch=styled.div`
 function FindJob() {
   return (
     <>
-    <Header/>
 
     <HollyJobSearch>
       <Search alignment={ "center"}/>

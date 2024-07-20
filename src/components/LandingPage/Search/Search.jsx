@@ -14,7 +14,7 @@ function Search({alignment}) {
     }} type="text" placeholder='Search for job titile' />
     <Button onClick={()=>{
       
-    }} >Get Start</Button>
+    }} >search</Button>
     </SearchStyle>
   )
 }

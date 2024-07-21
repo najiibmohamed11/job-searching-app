@@ -2,7 +2,7 @@ import React from 'react'
 import MainLogo from '../../../assets/MainLogo.png'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import {Headers,Navigations,SingleLink,JoinToUs} from './style'
+import {Headers,Navigations,SingleLink,contactBtn} from './style'
 
 function Header() {
 
@@ -11,14 +11,13 @@ function Header() {
   return (
     <Headers>
   
-            <Link><img src={MainLogo} alt="" width={80} /></Link>
+            <Link to='/'><img src={MainLogo} alt="" width={80} /></Link>
             <Navigations>
-                <SingleLink>Home</SingleLink>
-                <SingleLink>Find Job</SingleLink>
-                <SingleLink>Why Man</SingleLink>
-                <SingleLink>Contact</SingleLink>
+                <SingleLink to="/">Home</SingleLink>
+                <SingleLink to="/findjop">Find Job</SingleLink>
+                <SingleLink to="/about">about us</SingleLink>
+                <SingleLink to="/contact">Contact</SingleLink>
             </Navigations>
-            <JoinToUs>Join With Us</JoinToUs>
     </Headers>
   )
 }

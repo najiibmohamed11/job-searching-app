@@ -1,10 +1,10 @@
 import React from 'react';
 import { FIVE_HIGHEST_SALARY_JOBS, FIVE_LATEST_JOBS, FIVE_RECOMMENDE_JOBS } from '../../../GraphQl/JobQuary';
-import styled from 'styled-components';
 import { useQuery } from '@apollo/client';
 import JobCard from '../../Job Card/JobCard';
 import { useSelector } from 'react-redux';
 import {JobsContainer,} from './style'
+import Loading from '../../Loading/Loading';
 
 
 function FifeJobs() {
@@ -22,14 +22,14 @@ function FifeJobs() {
     return <h1>Error: {error.message}</h1>;
   }
   if (loading) {
-    return <JobsContainer><h1 style={{textAlign:"center", display: "flex", justifyContent:'center',alignContent:'center'}}>Loading...</h1>;</JobsContainer> 
+    return <Loading/>
   }
 
   return (
     <>
         <JobsContainer>
-      {data.job_info.map((job_info, index) => <JobCard {...job_info} key={index} />)}
-    </JobsContainer>
+          {data.job_info.map((job_info, index) => <JobCard {...job_info} key={index} />)}
+        </JobsContainer>
 
 
     </>

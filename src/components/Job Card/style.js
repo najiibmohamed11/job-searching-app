@@ -13,7 +13,6 @@ import styled from 'styled-components';
 export const HollyCard = styled.div`
     width: 280px;
     height: 350px;
-    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     border: 1px solid gray;
     border-radius: 10px;
